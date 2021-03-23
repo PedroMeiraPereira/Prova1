@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Prova1</string>
+    <string name="escolha_a_moeda_que_deseja_converter">Escolha a moeda que deseja converter</string>
+    <string name="dolar">Dólar</string>
+    <string name="rublo">Rublo</string>
+    <string name="euro">Euro</string>
+    <string name="dirra">Dirrã</string>
+    <string name="iene">Iene</string>
+    <string name="rupia">Rupia</string>
+    <string name="conversao_em_dolar">Conversão em Dolar</string>
+    <string name="conversao_em_euro">Conversão em Euro</string>
+    <string name="conversao_em_rublo">Conversão em Rublo</string>
+    <string name="conversao_em_dirra">Conversão em Dirrã</string>
+    <string name="conversao_em_iene">Conversão em Iene</string>
+    <string name="conversao_em_rupia">Conversão em Rupia</string>
+
+</resources>

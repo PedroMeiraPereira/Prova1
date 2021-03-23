@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pale_grey"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/escolha_a_moeda_que_deseja_converter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/manropeextrabold"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="32dp"
+        android:gravity="center"
+        android:textColor="@color/dark_grey"/>
+
+    <EditText
+        android:id="@+id/box_preencher_valor"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/button_preencha_valor"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="22dp"
+        android:layout_marginHorizontal="25dp"
+        android:hint="Preencha com o valor a ser convertido"
+        android:inputType="numberDecimal"
+        android:textColor="@color/light_grey"
+        android:textSize="14sp"
+        android:paddingLeft="14.5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/box_preencher_valor"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="25dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <Button
+                android:id="@+id/button_eua"
+                android:layout_weight="1"
+                android:layout_width="155dp"
+                android:layout_height="120dp"
+                android:background="@drawable/button_bandeiras"
+                android:drawableTop="@drawable/eua"
+                android:paddingTop="30dp"
+                android:paddingBottom="28dp"
+                android:text="@string/dolar"
+                android:textAllCaps="false"
+                android:fontFamily="@font/manropebold"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:layout_marginRight="15dp"/>
+            <Button
+                android:id="@+id/button_mexico"
+                android:layout_weight="1"
+                android:layout_width="155dp"
+                android:layout_height="120dp"
+                android:background="@drawable/button_bandeiras"
+                android:drawableTop="@drawable/mexico"
+                android:paddingTop="30dp"
+                android:paddingBottom="28dp"
+                android:text="@string/euro"
+                android:textAllCaps="false"
+                android:fontFamily="@font/manropebold"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="15dp"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/button_russia"
+                android:layout_weight="1"
+                android:layout_width="155dp"
+                android:layout_height="120dp"
+                android:background="@drawable/button_bandeiras"
+                android:drawableTop="@drawable/russia"
+                android:paddingTop="30dp"
+                android:paddingBottom="28dp"
+                android:text="@string/rublo"
+                android:textAllCaps="false"
+                android:fontFamily="@font/manropebold"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:layout_marginRight="15dp"/>
+            <Button
+                android:id="@+id/button_eau"
+                android:layout_weight="1"
+                android:layout_width="155dp"
+                android:layout_height="120dp"
+                android:background="@drawable/button_bandeiras"
+                android:drawableTop="@drawable/eau"
+                android:paddingTop="30dp"
+                android:paddingBottom="28dp"
+                android:text="@string/dirra"
+                android:textAllCaps="false"
+                android:fontFamily="@font/manropebold"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/button_japao"
+                android:layout_weight="1"
+                android:layout_width="155dp"
+                android:layout_height="120dp"
+                android:background="@drawable/button_bandeiras"
+                android:drawableTop="@drawable/japao"
+                android:paddingTop="30dp"
+                android:paddingBottom="28dp"
+                android:text="@string/iene"
+                android:textAllCaps="false"
+                android:fontFamily="@font/manropebold"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:layout_marginRight="15dp"/>
+            <Button
+                android:id="@+id/button_india"
+                android:layout_weight="1"
+                android:layout_width="155dp"
+                android:layout_height="120dp"
+                android:background="@drawable/button_bandeiras"
+                android:drawableTop="@drawable/india"
+                android:paddingTop="30dp"
+                android:paddingBottom="28dp"
+                android:text="@string/rupia"
+                android:textAllCaps="false"
+                android:fontFamily="@font/manropebold"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bandeiras">
+
+            <TextView
+                android:id="@+id/moeda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Conversão"
+                android:fontFamily="@font/manropesemibold"
+                android:textColor="@color/dark_grey"
+                android:textSize="14sp"
+                android:layout_marginLeft="51.5dp"
+                android:layout_marginTop="19dp"/>
+            <TextView
+                android:id="@+id/valor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0,00"
+                android:fontFamily="@font/manroperegular"
+                android:textColor="@color/dolar_grey"
+                android:textSize="14sp"
+                android:layout_marginLeft="51.5dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
